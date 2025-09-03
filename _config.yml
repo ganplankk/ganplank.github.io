@@ -1,43 +1,93 @@
 title: 방효성 | Portfolio
-description: Network / DevOps / Cloud-Native
-url: https://ganplankk.github.io
-baseurl: ""          # user 사이트는 빈 문자열!
-locale: ko-KR
-#remote_theme: "mmistakes/minimal-mistakes"
+tagline: "Network / DevOps Engineer"
+description: >
+  L4/ADC, Kubernetes, Cloud-Native
+
+url: "https://ganplankk.github.io"   # 꼭 본인 페이지 주소
+baseurl: ""                          # User Page는 반드시 빈 값
+
+# Chirpy 테마 지정
 remote_theme: "cotes2020/jekyll-theme-chirpy"
 
+# 플러그인 (GitHub Pages 호환용)
 plugins:
-  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-# 프로필
+lang: ko-KR
+
+# 작성자 정보
 author:
   name: "방효성"
-  avatar: "/assets/img/profile.jpg"
-  bio: "L4/ADC • Kubernetes • VXLAN EVPN • SR-IOV"
+  avatar: "/assets/img/hyoseoung.jpg"
+  bio: "Network / DevOps / Cloud-Native Engineer"
   location: "Seoul, KR"
   links:
     - label: GitHub
+      icon: "fab fa-github"
       url: "https://github.com/ganplankk"
     - label: LinkedIn
+      icon: "fab fa-linkedin"
       url: "#"
 
-# 네비게이션
-collections:
-  portfolio:
-    output: true
-    permalink: /portfolio/:path/
+# 네비게이션 메뉴
+nav:
+  - title: "About"
+    url: /about/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "Blog"
+    url: /posts/
 
-defaults:
-  - scope: {path: "", type: "posts"}
-    values: {layout: single, author_profile: true}
-  - scope: {path: "", type: "portfolio"}
-    values: {layout: single, author_profile: true}
+# 댓글/분석 (원하면 나중에 키 넣기)
+comments:
+  provider: false
 
-theme: null   # remote_theme를 쓸 땐 theme: null
+analytics:
+  provider: false
 
 
-#remote_theme: just-the-docs/just-the-docs
-#color_scheme: dark
-#logo: /assets/img/profile.jpg
-aux_links:
-  GitHub: https://github.com/ganplankk
+#title: 방효성 | Portfolio
+#description: Network / DevOps / Cloud-Native
+#url: https://ganplankk.github.io
+#baseurl: ""          # user 사이트는 빈 문자열!
+#locale: ko-KR
+##remote_theme: "mmistakes/minimal-mistakes"
+#remote_theme: "cotes2020/jekyll-theme-chirpy"
+#
+#plugins:
+#  - jekyll-include-cache
+#
+## 프로필
+#author:
+#  name: "방효성"
+#  avatar: "/assets/img/profile.jpg"
+#  bio: "L4/ADC • Kubernetes • VXLAN EVPN • SR-IOV"
+#  location: "Seoul, KR"
+#  links:
+#    - label: GitHub
+#      url: "https://github.com/ganplankk"
+#    - label: LinkedIn
+#      url: "#"
+#
+## 네비게이션
+#collections:
+#  portfolio:
+#    output: true
+#    permalink: /portfolio/:path/
+#
+#defaults:
+#  - scope: {path: "", type: "posts"}
+#    values: {layout: single, author_profile: true}
+#  - scope: {path: "", type: "portfolio"}
+#    values: {layout: single, author_profile: true}
+#
+#theme: null   # remote_theme를 쓸 땐 theme: null
+#
+#
+##remote_theme: just-the-docs/just-the-docs
+##color_scheme: dark
+##logo: /assets/img/profile.jpg
+#aux_links:
+#  GitHub: https://github.com/ganplankk
