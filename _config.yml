@@ -8,6 +8,7 @@ baseurl: ""                          # User Page는 반드시 빈 값
 
 # Chirpy 테마 지정
 remote_theme: "cotes2020/jekyll-theme-chirpy"
+theme: null                        # remote_theme를 쓸 땐 theme: null
 
 # 플러그인 (GitHub Pages 호환용)
 plugins:
