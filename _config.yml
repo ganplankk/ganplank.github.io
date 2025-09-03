@@ -1,0 +1,43 @@
+title: 방효성 | Portfolio
+description: Network / DevOps / Cloud-Native
+url: https://ganplankk.github.io
+baseurl: ""          # user 사이트는 빈 문자열!
+locale: ko-KR
+#remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: "cotes2020/jekyll-theme-chirpy"
+
+plugins:
+  - jekyll-include-cache
+
+# 프로필
+author:
+  name: "방효성"
+  avatar: "/assets/img/profile.jpg"
+  bio: "L4/ADC • Kubernetes • VXLAN EVPN • SR-IOV"
+  location: "Seoul, KR"
+  links:
+    - label: GitHub
+      url: "https://github.com/ganplankk"
+    - label: LinkedIn
+      url: "#"
+
+# 네비게이션
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+
+defaults:
+  - scope: {path: "", type: "posts"}
+    values: {layout: single, author_profile: true}
+  - scope: {path: "", type: "portfolio"}
+    values: {layout: single, author_profile: true}
+
+theme: null   # remote_theme를 쓸 땐 theme: null
+
+
+#remote_theme: just-the-docs/just-the-docs
+#color_scheme: dark
+#logo: /assets/img/profile.jpg
+aux_links:
+  GitHub: https://github.com/ganplankk
