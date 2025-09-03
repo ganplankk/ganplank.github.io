@@ -1,1 +1,1 @@
-ganplank.github.io.git
+ganplank.github.io
