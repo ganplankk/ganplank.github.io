@@ -1,24 +1,22 @@
 title: 방효성 | Portfolio
 tagline: "Network / DevOps Engineer"
-description: >
-  L4/ADC, Kubernetes, Cloud-Native
+description: "L4/ADC, Kubernetes, Cloud-Native"
+url: "https://ganplankk.github.io"
+baseurl: ""                       # User 페이지는 빈 값!
 
-url: "https://ganplankk.github.io"   # 꼭 본인 페이지 주소
-baseurl: ""                          # User Page는 반드시 빈 값
-
-# Chirpy 테마 지정
+# Chirpy 원격 테마
 remote_theme: "cotes2020/jekyll-theme-chirpy"
-theme: null                        # remote_theme를 쓸 땐 theme: null
 
-# 플러그인 (GitHub Pages 호환용)
+lang: ko-KR
+
+# 로컬/Actions 빌드에서 필요한 플러그인
 plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
-lang: ko-KR
-
-# 작성자 정보
 author:
   name: "방효성"
   avatar: "/assets/img/hyoseoung.jpg"
@@ -28,11 +26,8 @@ author:
     - label: GitHub
       icon: "fab fa-github"
       url: "https://github.com/ganplankk"
-    - label: LinkedIn
-      icon: "fab fa-linkedin"
-      url: "#"
 
-# 네비게이션 메뉴
+# 탭/메뉴 (원하면 later)
 nav:
   - title: "About"
     url: /about/
@@ -40,55 +35,3 @@ nav:
     url: /portfolio/
   - title: "Blog"
     url: /posts/
-
-# 댓글/분석 (원하면 나중에 키 넣기)
-comments:
-  provider: false
-
-analytics:
-  provider: false
-
-
-#title: 방효성 | Portfolio
-#description: Network / DevOps / Cloud-Native
-#url: https://ganplankk.github.io
-#baseurl: ""          # user 사이트는 빈 문자열!
-#locale: ko-KR
-##remote_theme: "mmistakes/minimal-mistakes"
-#remote_theme: "cotes2020/jekyll-theme-chirpy"
-#
-#plugins:
-#  - jekyll-include-cache
-#
-## 프로필
-#author:
-#  name: "방효성"
-#  avatar: "/assets/img/profile.jpg"
-#  bio: "L4/ADC • Kubernetes • VXLAN EVPN • SR-IOV"
-#  location: "Seoul, KR"
-#  links:
-#    - label: GitHub
-#      url: "https://github.com/ganplankk"
-#    - label: LinkedIn
-#      url: "#"
-#
-## 네비게이션
-#collections:
-#  portfolio:
-#    output: true
-#    permalink: /portfolio/:path/
-#
-#defaults:
-#  - scope: {path: "", type: "posts"}
-#    values: {layout: single, author_profile: true}
-#  - scope: {path: "", type: "portfolio"}
-#    values: {layout: single, author_profile: true}
-#
-#theme: null   # remote_theme를 쓸 땐 theme: null
-#
-#
-##remote_theme: just-the-docs/just-the-docs
-##color_scheme: dark
-##logo: /assets/img/profile.jpg
-#aux_links:
-#  GitHub: https://github.com/ganplankk
