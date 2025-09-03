@@ -1,37 +1,27 @@
 title: 방효성 | Portfolio
-tagline: "Network / DevOps Engineer"
-description: "L4/ADC, Kubernetes, Cloud-Native"
+description: "Network / DevOps Engineer"
 url: "https://ganplankk.github.io"
-baseurl: ""                       # User 페이지는 빈 값!
+baseurl: ""
 
-# Chirpy 원격 테마
-remote_theme: "cotes2020/jekyll-theme-chirpy"
+theme: jekyll-theme-chirpy
 
 lang: ko-KR
 
-# 로컬/Actions 빌드에서 필요한 플러그인
 plugins:
-  - jekyll-remote-theme
-  - jekyll-include-cache
-  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-archives
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-mentions
   - jekyll-seo-tag
   - jekyll-sitemap
 
-author:
-  name: "방효성"
-  avatar: "/assets/img/hyoseoung.jpg"
-  bio: "Network / DevOps / Cloud-Native Engineer"
-  location: "Seoul, KR"
-  links:
-    - label: GitHub
-      icon: "fab fa-github"
-      url: "https://github.com/ganplankk"
+paginate: 10
+paginate_path: "/page:num/"
 
-# 탭/메뉴 (원하면 later)
-nav:
-  - title: "About"
-    url: /about/
-  - title: "Portfolio"
-    url: /portfolio/
-  - title: "Blog"
-    url: /posts/
+jekyll-archives:
+  enabled: [categories, tags]
+  layout: archive
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
